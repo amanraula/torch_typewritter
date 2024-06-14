@@ -16,7 +16,6 @@
       transform: translate(-50%, -50%);
       z-index: 2;
       color: aliceblue;
-     font-size: 5em;
     }
 
     .welcome {
@@ -26,7 +25,6 @@
       transform: translate(-50%, -50%);
       z-index: 1;
       color: aliceblue;
-     font-size: 5em;
     }
 
     .underline {
@@ -50,4 +48,39 @@
       height: 50px;
       background-color: #ff4500;
       border-radius: 50%;
+    }
+    @media (max-width: 768px) {
+      body {
+        font-size: 2.5em;
+      }
+      .ball {
+        width: 25px;
+        height: 25px;
+        top: calc(100% - 35px);
+        left: calc(100% - 35px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      body {
+        font-size: 2em;
+      }
+      .ball {
+        width: 20px;
+        height: 20px;
+        top: calc(100% - 30px);
+        left: calc(100% - 30px);
+      }
+    }
+
+    @media (max-width: 400px) {
+      body {
+        font-size: 1.5em;
+      }
+      .ball {
+        width: 15px;
+        height: 15px;
+        top: calc(100% - 25px);
+        left: calc(100% - 25px);
+      }
     }
